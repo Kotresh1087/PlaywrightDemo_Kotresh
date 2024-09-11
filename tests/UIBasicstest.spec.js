@@ -89,18 +89,23 @@
     console.log(domain);
     await page.locator("#username").type(domain);
     console.log(await page.locator("#username").textContent());
-
-
-
-
-    
-    
-
-
-
-
-
  })
+
+ test('new branch test added', async ({browser})=>
+ {
+   
+      const context = await browser.newContext();
+      const page =  await context.newPage();
+      await page.goto("https://www.google.com");
+ });
+
+ test('new branch test added', async ({browser})=>
+ {
+   
+      const context = await browser.newContext();
+      const page =  await context.newPage();
+      await page.goto("https://www.gmail.com");
+ });
 
 
 
