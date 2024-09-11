@@ -10,8 +10,11 @@
       const page =  await context.newPage();
     // page.route('**/*.{jpg,png,jpeg}',route=> route.abort());
       const userName = page.locator('#username');
+      console.log(userName);
+
       const signIn = page.locator("#signInBtn");
       const cardTitles =  page.locator(".card-body a");
+      console.log(cardTitles);
       page.on('request',request=> console.log(request.url()));
       page.on('response',response=> console.log(response.url(), response.status()));
       await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
