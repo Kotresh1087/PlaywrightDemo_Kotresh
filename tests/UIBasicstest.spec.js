@@ -11,6 +11,9 @@
     // page.route('**/*.{jpg,png,jpeg}',route=> route.abort());
       const userName = page.locator('#username');
       console.log(userName);
+      console.log("Hello");
+      console.log("Hello2");
+      
 
       const signIn = page.locator("#signInBtn");
       const cardTitles =  page.locator(".card-body a");
